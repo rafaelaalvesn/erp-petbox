@@ -14,6 +14,9 @@ $("#logar").click(function () {
     else if (login == "rh" && senha == "123") {
         window.document.location = "./rh.html";
     }
+    else if (login == "financeiro" && senha == "123") {
+        window.document.location = "./financeiro.html";
+    }
     else if (login != "petbox" && senha != "123") {
         alert("Login Inválido")
         return
