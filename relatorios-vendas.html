@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="relatorios-vendas.css">
+</head>
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation" style="width: 20%;">
+                <div class="logo">
+                    <a href="vendas.html"><img src="img/dog.png" alt="merkery_logo" class="hidden-xs hidden-sm">
+                    </a>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Relatórios</span></a></li>
+                        <li id="print"><a href="#"><i class="fa fa-print" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Imprimir</span></a></li>
+                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Statistics</span></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calender</span></a></li>
+                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
+                        <li class="sair"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Sair</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <div class="user-dashboard">
+                    <h1>Relatórios de Vendas</h1>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-7 col-xs-12 gutter">
+                            <div class="sales report">
+                                <h2>Relatório</h2>
+                                <div class="btn-group ">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span id="nomeRelatorio">Relatório</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" onclick="RelatorioSelecionado('Quantidade de Pedidos', 'qtdPedidos')">Quantidade de Pedidos</a>
+                                        <a href="#"  onclick="AnoSelecionado(2013)">2014</a>
+                                        <a href="#" class="nomeRelatorioSelecionado">2015</a>
+                                        <a href="#" class="nomeRelatorioSelecionado">2016</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-5 col-xs-12 gutter">
+                            <div class="sales">
+                                <h2>Mês</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span id="mesRelatorio">Período</span> 
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" onclick="MesSelecionado('Janeiro', 1)">Janeiro</a>
+                                        <a href="#" onclick="MesSelecionado('Fevereiro', 2)">Fevereiro</a>
+                                        <a href="#" onclick="MesSelecionado('Março', 3)">Março</a>
+                                        <a href="#" onclick="MesSelecionado('Abril', 4)">Abril</a>
+                                        <a href="#" onclick="MesSelecionado('Maio', 5)">Maio</a>
+                                        <a href="#" onclick="MesSelecionado('Junho', 6)">Junho</a>
+                                        <a href="#" onclick="MesSelecionado('Julho', 7)">Julho</a>
+                                        <a href="#" onclick="MesSelecionado('Agosto', 8)">Agosto</a>
+                                        <a href="#" onclick="MesSelecionado('Setembro', 9)">Setembro</a>
+                                        <a href="#" onclick="MesSelecionado('Outubro', 10)">Outubro</a>
+                                        <a href="#" onclick="MesSelecionado('Novembro', 11)">Novembro</a>
+                                        <a href="#" onclick="MesSelecionado('Dezembro', 12)">Dezembro</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-5 col-xs-12 gutter">
+                            <div class="sales">
+                                <h2>Ano</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span id="anoRelatorio">Período</span> 
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" onclick="AnoSelecionado(2019)">2019</a>
+                                        <a href="#" onclick="AnoSelecionado(2020)">2020</a>
+                                        <a href="#" onclick="AnoSelecionado(2021)">2021</a>
+                                        <a href="#" onclick="AnoSelecionado(2022)">2022</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-5 col-xs-12 gutter">
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg" type="button" style="height: 72px;" id="btnGerarRelatorio"> 
+                                        <span id="mesRelatorio">Gerar</span> 
+                                    </button>                                  
+                                </div>
+                        </div>
+                    </div>
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+            </div>  
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+    <script src="relatorios-vendas.js"></script> 
+</body>
+</html>

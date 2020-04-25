@@ -1,0 +1,35 @@
+[
+    {
+        "ID": 1,
+        "NOME": "ITALO FABRÍCIO COURA",
+        "SETOR": "DESENVOLVIMENTO",
+        "FUNCAO": "ANALISTA DE SISTEMAS",
+        "SALARIO": "5000,00",
+        "DATA_ADMISSAO": "15/4/2020"
+    },
+    {
+        "ID": 2,
+        "NOME": "LETÍCIA BOMFIN",
+        "SETOR": "GARANTIA DA QUALIDADE",
+        "FUNCAO": "ANALISTA DE QUALIDADE",
+        "SALARIO": "5000,00",
+        "DATA_ADMISSAO": "15/4/2020"
+    },
+    {
+        "ID": 1,
+        "NOME": "RAFAELA ALVES",
+        "SETOR": "DESENVOLVIMENTO",
+        "FUNCAO": "ANALISTA DE SISTEMAS",
+        "SALARIO": "5000,00",
+        "DATA_ADMISSAO": "15/4/2020"
+    },
+    {
+        "ID": 1,
+        "NOME": "RAFAELLE VALADARES",
+        "SETOR": "BUSINESS INTELLIGENCE",
+        "FUNCAO": "ANALISTA DE BI",
+        "SALARIO": "5000,00",
+        "DATA_ADMISSAO": "15/4/2020"
+    }
+
+]

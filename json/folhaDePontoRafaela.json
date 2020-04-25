@@ -1,0 +1,314 @@
+[
+    {
+        "DIA": 1,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "19:00:00",
+        "HORAS_TRABALHADAS": "10:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 1,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 2,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 3,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 4,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 5,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 6,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 7,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 8,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 9,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "1:00:00",
+        "HORAS_TRABALHADAS": "09:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 10,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 11,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 12,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 13,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 14,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 15,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 16,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 17,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 18,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 19,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 20,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 21,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 22,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 23,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 24,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 25,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": "FOLGA"
+    },
+    {
+        "DIA": 26,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 27,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 28,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "20:00:00",
+        "HORAS_TRABALHADAS": "11:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 29,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "17:00:00",
+        "HORAS_TRABALHADAS": "08:00:00",
+        "OBSERVACAO": ""
+    },
+    {
+        "DIA": 30,
+        "MES": 4,
+        "DESC_MES":"ABRIL",
+        "ANO": 2020,
+        "HORA_ENTRADA": "08:00:00",
+        "HORA_SAIDA": "19:00:00",
+        "HORAS_TRABALHADAS": "10:00:00",
+        "OBSERVACAO": ""
+    }
+
+
+]

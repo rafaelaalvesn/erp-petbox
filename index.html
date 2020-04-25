@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petbox</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <img src="img/PETBOX-IA.png" id="icon" alt="User Icon" />
+      </div>
+      <form>
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario">
+        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
+        <br>
+        <div class="custom-control custom-radio fadeIn second">
+          <input type="radio" id="local" name="customRadio" class="custom-control-input" value="local">
+          <label class="custom-control-label" for="local">Local Server</label>
+        </div>
+        <div class="custom-control custom-radio fadeIn second">
+          <input type="radio" id="heroku" name="customRadio" class="custom-control-input" value="heroku">
+          <label class="custom-control-label" for="heroku">Heroku Server</label>
+        </div>
+        <br>
+        <input type="button" class="fadeIn fourth" value="ENTRAR" id="logar">
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Site Petbox</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

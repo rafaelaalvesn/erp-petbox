@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="rh.css">
+    <link rel="stylesheet" type="text/css" href="cards.css">
+</head>
+<body>
+    <nav class="navbar navbar-light shadow p-3 mb-5" style="background: #56baed;">
+        <a class="navbar-brand" href="rh.html">
+            <img src="img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            PETBOX
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="text-align: center;">
+                <li class="nav-item">
+                    <h4><a class="nav-link sair">Sair</a></h4>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="bodyVendas" class="container">
+        <div>
+            <h3  style="margin-left:1%">Recursos Humanos</h3>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-counter primary" onclick="(window.document.location='./relatorios-rh.html')">
+                        <i class="fa fa-file"></i>
+                        <span class="count-numbers">Relatórios</span>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3">
+                    <div class="card-counter danger">
+                        <i class="fa fa-ticket"></i>
+                        <span class="count-numbers">599</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-counter success" id="pedidos">
+                        <i class="fa fa-usd"></i>
+                        <span class="count-numbers">Pedidos</span>
+                    </div>
+                </div> -->
+                <div class="col-md-4">
+                    <div class="card-counter success" id="folhaDePonto">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="count-numbers">Folha De Ponto</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-counter info" id="funcionarios">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers">Funcionários</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="rh.js"></script>
+</body>
+
+</html>
