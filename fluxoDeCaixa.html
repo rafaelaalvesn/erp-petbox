@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="cards.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light shadow p-3 mb-5" style="background: #56baed;">
+        <a class="navbar-brand" href="financeiro.html">
+            <img src="img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            PETBOX
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="text-align: center;">
+                <li class="nav-item">
+                    <h4><a class="nav-link sair">Sair</a></h4>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="bodyVendas" class="container">
+        <div>
+            <h3>Fluxo de Caixa</h3>
+            <hr>
+        </div>
+        <div class="row"> 
+            <div class="col-1">
+                <label for="filter">Ano</label>
+            </div>
+            <div class="form-group col-2">
+                <select class="form-control" id="mesReferencia">
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-primary" type="button">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Fluxo de Caixa</th>
+                <th scope="col">Jan/2020</th>
+                <th scope="col">Fev/2020</th>
+                <th scope="col">Mar/2020</th>
+                <th scope="col">Abr/2020</th>
+                <th scope="col">Mai/2020</th>
+                <th scope="col">Jun/2020</th>
+                <th scope="col">Jul/2020</th>
+                <th scope="col">Ago/2020</th>
+                <th scope="col">Set/2020</th>
+                <th scope="col">Out/2020</th>
+                <th scope="col">Nov/2020</th>
+                <th scope="col">Dez/2020</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Saldo Inicial</th>
+                <td>R$ 5222,00</td>
+                <td>R$ 6454,00</td>
+                <td>R$ 7000,00</td>
+                <td>R$ 5454,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Receitas</th>
+                <td>R$ 3500,00</td>
+                <td>R$ 4000,00</td>
+                <td>R$ 3100,00</td>
+                <td>R$ 4500,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Despesas</th>
+                <td>R$ 1500,00</td>
+                <td>R$ 1874,00</td>
+                <td>R$ 1002,00</td>
+                <td>R$ 1468,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Balanço</th>
+                <td>R$ 3500,00</td>
+                <td>R$ 4000,00</td>
+                <td>R$ 3100,00</td>
+                <td>R$ 4500,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Acumulado</th>
+                <td>R$ 8687,00</td>
+                <td>R$ 9657,00</td>
+                <td>R$ 8774,00</td>
+                <td>R$ 9855,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Lucratividade</th>
+                <td>R$ 6000,00</td>
+                <td>R$ 6874,00</td>
+                <td>R$ 9555,00</td>
+                <td>R$ 9574,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Conta a Receber</th>
+                <td>R$ 2187,00</td>
+                <td>R$ 6594,00</td>
+                <td>R$ 1238,00</td>
+                <td>R$ 6875,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Conta a Pagar</th>
+                <td>R$ 2100,00</td>
+                <td>R$ 2105,00</td>
+                <td>R$ 2999,00</td>
+                <td>R$ 1025,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+            <tr>
+                <th scope="row">Necessidade de Caixa</th>
+                <td>R$ 100,00</td>
+                <td>R$ 574,00</td>
+                <td>R$ 369,00</td>
+                <td>R$ 127,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+                <td>R$ 00,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="financeiro.js"></script>
+</body>
+
+</html>
