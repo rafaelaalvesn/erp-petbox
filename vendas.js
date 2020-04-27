@@ -6,46 +6,46 @@ $('.sair').click(function () {
 $('#pedidos').click(async function () {
 
     var server = sessionStorage.getItem("server");
-    await $.getJSON(server+'api/petbox/pedidos/', async function (data) {
+    await $.getJSON(server + 'api/petbox/pedidos/', async function (data) {
 
-        await $.getJSON(server+'api/petbox/assinantes/', async function (assinante) {
+        await $.getJSON(server + 'api/petbox/assinantes/', async function (assinante) {
 
-        var html = '<div>' + 
-        '<h3 style="margin-left:1%">Pedidos</h3>' +
-        '<hr>' + 
-        '</div>'
+            var html = '<div>' +
+                '<h3 style="margin-left:1%">Pedidos</h3>' +
+                '<hr>' +
+                '</div>'
 
-        for (let index = 0; index < data.length; index++) {
+            for (let index = 0; index < data.length; index++) {
 
-            var dataPedido = await FormataData(data[index].DATA_PEDIDO);
-            var entregue = await StatusEntrega(data[index].FLG_ENTREGUE)
-            let i = assinante.findIndex(val => val.ID_ASSINANTE == data[index].ID_ASSINANTE);
+                var dataPedido = await FormataData(data[index].DATA_PEDIDO);
+                var entregue = await StatusEntrega(data[index].FLG_ENTREGUE)
+                let i = assinante.findIndex(val => val.ID_ASSINANTE == data[index].ID_ASSINANTE);
 
-            html += `<tr>` +
-                `<th scope="row">${data[index].ID_PEDIDO}</th>` +
-                `<td>${assinante[i].NOME}</td>` +
-                `<td>${entregue}</td>` +
-                `<td>${dataPedido}</td>` +
-                `</tr>`
-        }
+                html += `<tr>` +
+                    `<th scope="row">${data[index].ID_PEDIDO}</th>` +
+                    `<td>${assinante[i].NOME}</td>` +
+                    `<td>${entregue}</td>` +
+                    `<td>${dataPedido}</td>` +
+                    `</tr>`
+            }
 
-        $("#bodyVendas").html('<table class="table table-hover">' +
-            ' <thead>' +
-            '<tr>' +
-            '<th scope="col">ID PEDIDO</th>' +
-            '<th scope="col">ASSINANTE</th>' +
-            '<th scope="col">STATUS ENTREGA</th>' +
-            '<th scope="col">DATA DO PEDIDO</th>' +
-            '</tr>' +
-            '</thead>' +
-            '<tbody>' +
-            html +
+            $("#bodyVendas").html('<table class="table table-hover">' +
+                ' <thead>' +
+                '<tr>' +
+                '<th scope="col">ID PEDIDO</th>' +
+                '<th scope="col">ASSINANTE</th>' +
+                '<th scope="col">STATUS ENTREGA</th>' +
+                '<th scope="col">DATA DO PEDIDO</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>' +
+                html +
 
-            '</tbody>' +
-            '</table>'
-        )
+                '</tbody>' +
+                '</table>'
+            )
 
-    });
+        });
 
     });
 
@@ -54,13 +54,13 @@ $('#pedidos').click(async function () {
 $('#clientes').click(async function () {
 
     var server = sessionStorage.getItem("server");
-    await $.getJSON(server+'api/petbox/assinantes/', async function (data) {
+    await $.getJSON(server + 'api/petbox/assinantes/', async function (data) {
 
-        
-        var html = '<div>' + 
-        '<h3 style="margin-left:1%">Clientes</h3>' +
-        '<hr>' + 
-        '</div>'
+
+        var html = '<div>' +
+            '<h3 style="margin-left:1%">Clientes</h3>' +
+            '<hr>' +
+            '</div>'
 
         for (let index = 0; index < data.length; index++) {
 
@@ -103,32 +103,59 @@ $('#relatorios').click(function () {
 });
 
 
-async function FormataData(data)
-{
+async function FormataData(data) {
     data = data.substring(0, 10)
 
     var diaF = data.split("-")[2];
     var mesF = data.split("-")[1];
     var anoF = data.split("-")[0];
-  
+
     return diaF + "/" + mesF + "/" + anoF
 
 }
 
-async function StatusEntrega(entregue)
-{
-if(entregue) return "ENTREGUE"
-else return "ENTREGA PENDENTE"
+async function StatusEntrega(entregue) {
+    if (entregue) return "ENTREGUE"
+    else return "ENTREGA PENDENTE"
 
 }
-async function GetPlano(idPLano)
-{
-    if(idPLano == 1) return "Básico"
+async function GetPlano(idPLano) {
+    if (idPLano == 1) return "Básico"
     else if (idPLano == 2) return "Clássico"
     else if (idPLano == 3) return "Master"
 }
 
 
-// var doc = new jsPDF()
-// doc.text('Hello world!', 10, 10)
-// doc.save('a4.pdf')
+$('#caixas').click(async function () {
+
+    var server = sessionStorage.getItem("server");
+
+    await $.getJSON(server + 'api/petbox/pedidosItens/', async function (pedidoItens) {
+
+        await $.getJSON(server + 'api/petbox/itens/', async function (itens) {
+
+            var descricaoItens = "";
+
+
+            var html = '<div>' +
+            '<h3 style="margin-left:1%">Clientes</h3>' +
+            '<hr>' +
+            '</div>'
+
+
+            for (let index = 0; index < pedidoItens.length; index++) {
+
+                let i = itens.findIndex(val => val.ID_ITEM == pedidoItens[index].ID_ITEM);
+                descricaoItens += `<li class="list-group-item"><b>PEDIDO ${pedidoItens[index].ID_PEDIDO } </b>- ${itens[i].DESC_ITEM} </li>`
+            }
+
+            await $("#bodyVendas").html(html + '<ul class="list-group list-group-flush">' +
+                descricaoItens +
+                '</ul>')
+
+        })
+
+    })
+
+
+})
