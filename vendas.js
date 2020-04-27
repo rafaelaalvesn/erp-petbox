@@ -66,6 +66,7 @@ $('#clientes').click(async function () {
 
             var dataNascimento = await FormataData(data[index].DT_NASCIMENTO);
             var plano = await GetPlano(data[index].ID_PLANO);
+            var statusCadastro = await StatusCadastro(data[index].CADASTRO_ATIVO)
 
             html += `<tr>` +
                 `<th scope="row">${data[index].ID_ASSINANTE}</th>` +
@@ -73,6 +74,7 @@ $('#clientes').click(async function () {
                 `<td>${plano}</td>` +
                 `<td>${data[index].TELEFONE_PRINCIPAL}</td>` +
                 `<td>${dataNascimento}</td>` +
+                `<td>${statusCadastro}</td>` +
                 `</tr>`
         }
 
@@ -84,6 +86,7 @@ $('#clientes').click(async function () {
             '<th scope="col">PLANO</th>' +
             '<th scope="col">TELEFONE</th>' +
             '<th scope="col">DATA DE NASCIMENTO</th>' +
+            '<th scope="col">STATUS DA ASSINATURA</th>' +
             '</tr>' +
             '</thead>' +
             '<tbody>' +
@@ -119,6 +122,13 @@ async function StatusEntrega(entregue) {
     else return "ENTREGA PENDENTE"
 
 }
+
+async function StatusCadastro(flg) {
+    if (flg) return "ATIVA"
+    else return "INATIVA"
+
+}
+
 async function GetPlano(idPLano) {
     if (idPLano == 1) return "Básico"
     else if (idPLano == 2) return "Clássico"

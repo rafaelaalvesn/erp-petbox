@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petbox</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+    <nav class="navbar navbar-light shadow p-3 mb-5" style="background: #122143;">
+        <a class="navbar-brand" style="color: white;">
+            <img src="img/dog.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            PETBOX
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background: white;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="text-align: center;">
+                <li class="nav-item">
+                    <h4><a class="nav-link sair" style="color: white!important;">Sair</a></h4>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3 class=" text-center">Chat</h3>
+        <div class="messaging">
+              <div class="inbox_msg">
+                <div class="inbox_people">
+                  <div class="headind_srch">
+                    <div class="recent_heading">
+                      <h4>Recentes</h4>
+                    </div>
+                    <div class="srch_bar">
+                      <div class="stylish-input-group">
+                        <input type="text" class="search-bar"  placeholder="Search" >
+                        <span class="input-group-addon">
+                        <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                        </span> </div>
+                    </div>
+                  </div>
+                  <div class="inbox_chat">
+                    <div class="chat_list active_chat">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Italo - Desenvolvimento <span class="chat_date">27 abr.</span></h5>
+                          <p>Olá, bom dia, poderia entrar em contato assim que possível?</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Rafaela - Desenvolvimento <span class="chat_date">27 abr.</span></h5>
+                          <p>Bom dia, surgiu uma nova demanda, qual sua disponibilidade de horário?</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat_list">
+                      <div class="chat_people">
+                        <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                        <div class="chat_ib">
+                          <h5>Rafaelle - BI <span class="chat_date">27 abr.</span></h5>
+                          <p>Olá Rafa, feliz aniversário, tudo de bom hoje e sempre!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mesgs">
+                  <div class="msg_history">
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>Olá, bom dia, poderia entrar em contato assim que possível?</p>
+                          <span class="time_date"> 07:00    |    27. abr</span></div>
+                      </div>
+                    </div>
+                    <div class="outgoing_msg">
+                      <div class="sent_msg">
+                        <p>Oi, bom dia!</p>
+                        <span class="time_date"> 08:00     |    27. abr</span> </div>
+                    </div>
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>Acho que o sistema está com um bug</p>
+                          <span class="time_date"> 08:05     |    27. abr</span></div>
+                      </div>
+                    </div>
+                    <div class="outgoing_msg">
+                      <div class="sent_msg">
+                        <p>Quando recarrego a página 9 vezes seguidas fica tudo em branco.</p>
+                        <span class="time_date"> 08:06     |    27. abr</span> </div>
+                    </div>
+                    <div class="incoming_msg">
+                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                      <div class="received_msg">
+                        <div class="received_withd_msg">
+                          <p>Vou veficar e te falo.</p>
+                          <span class="time_date">08:10     |    27. abr</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type_msg">
+                    <div class="input_msg_write">
+                      <input type="text" class="write_msg" placeholder="Digite a mensagem" />
+                      <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>                     
+            </div></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="financeiro.js"></script>
+</body>
+
+</html>
