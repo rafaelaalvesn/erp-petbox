@@ -18,7 +18,7 @@ $('#pedidos').click(async function () {
             for (let index = 0; index < data.length; index++) {
 
                 var dataPedido = await FormataData(data[index].DATA_PEDIDO);
-                var entregue = await StatusEntrega(data[index].FLG_ENTREGUE)
+                var entregue = await StatusEntrega(data[index].ID_PEDIDO)
                 let i = assinante.findIndex(val => val.ID_ASSINANTE == data[index].ID_ASSINANTE);
 
                 html += `<tr>` +
@@ -117,11 +117,26 @@ async function FormataData(data) {
 
 }
 
-async function StatusEntrega(entregue) {
-    if (entregue) return "ENTREGUE"
-    else return "ENTREGA PENDENTE"
-
+async function StatusEntrega(idPedido) {
+      
+    return new Promise((resolve, reject) => {
+        $.ajax({
+        beforeSend: function(request) {
+           request.setRequestHeader("Authorization", 'Bearer key5vsWx2WI9FaZPC');
+        },
+        type: 'GET',
+        dataType: "json",
+        url: `https://api.airtable.com/v0/applWk6IGtiasBZJs/Pedidos/?filterByFormula={Número}=${idPedido}`,
+          success: function(data) {
+            resolve(data.records[0].fields.Status.toUpperCase()) 
+          },
+          error: function(error) {
+            reject(error)
+          },
+        })
+      })
 }
+
 
 async function StatusCadastro(flg) {
     if (flg) return "ATIVA"
