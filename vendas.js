@@ -128,7 +128,9 @@ async function StatusEntrega(idPedido) {
         dataType: "json",
         url: `https://api.airtable.com/v0/applWk6IGtiasBZJs/Pedidos/?filterByFormula={Número}=${idPedido}`,
           success: function(data) {
-            resolve(data.records[0].fields.Status.toUpperCase()) 
+            if(data.records.length > 0){
+                resolve(data.records[0].fields.Status.toUpperCase()) 
+              } else resolve("STATUS DESCONHECIDO")
           },
           error: function(error) {
             reject(error)
