@@ -84,10 +84,10 @@ async function PreencheFolhaDePonto(funcionario, numMes, descMes) {
             html += `<tr>` +
                 `<th scope="row">${data.records[index].fields["Mês referência"]}</th>` +
                 `<td>${data.records[index].fields.Data}</td>` +
-                `<td>${data.records[index].fields.Entrada}</td>` +
-                `<td>${data.records[index].fields.Saída}</td>` +
-                `<td>${data.records[index].fields["Horas Trabalhadas"]}</td>` +
-                `<td>--</td>` +
+                `<td>${data.records[index].fields.Entrada === undefined ? "--" : data.records[index].fields.Entrada}</td>` +
+                `<td>${data.records[index].fields.Saída === undefined ? "--" : data.records[index].fields.Saída}</td>` +
+                `<td>${data.records[index].fields["Horas Trabalhadas"] === undefined ? "--" : data.records[index].fields["Horas Trabalhadas"]}</td>` +
+                `<td>${data.records[index].fields.Observação === undefined ? "--" : data.records[index].fields.Observação}</td>` +
                 `</tr>`
         }
 
