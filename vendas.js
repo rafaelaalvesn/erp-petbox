@@ -19,7 +19,7 @@ $('#pedidos').click(async function () {
 
                 var dataPedido = await FormataData(data[index].DATA_PEDIDO);
                 var entregue = await StatusEntrega(data[index].ID_PEDIDO)
-                let i = assinante.findIndex(val => val.ID_ASSINANTE == data[index].ID_ASSINANTE);
+              cc
 
                 html += `<tr>` +
                     `<th scope="row">${data[index].ID_PEDIDO}</th>` +

@@ -4,7 +4,7 @@ $('.sair').click(function () {
 
 $('#funcionarios').click(async function () {
 
-    await $.getJSON('json/funcionarios.json', async function (data) {
+    await $.getJSON('https://api.airtable.com/v0/appoAW6cx5OpDFgik/Funcionarios?api_key=keyKYnivsmDdUhpoa', async function (data) {
 
         localStorage.setItem("funcionarios", JSON.stringify(data));
 
@@ -13,18 +13,18 @@ $('#funcionarios').click(async function () {
             '<hr>' +
             '</div>'
 
-        for (let index = 0; index < data.length; index++) {
+        for (let index = 0; index < data.records.length; index++) {
 
 
             html += `<tr>` +
-                `<th scope="row">${data[index].ID}</th>` +
-                `<td>${data[index].NOME}</td>` +
-                `<td>${data[index].SETOR}</td>` +
-                `<td>${data[index].FUNCAO}</td>` +
-                `<td>${data[index].SALARIO}</td>` +
-                `<td>${data[index].DATA_ADMISSAO}</td>` +
-                `<td><i class="fa fa-pencil" aria-hidden="true" onclick="EditarFuncionario(${data[index].ID}})"></i></td>` +
-                `<td><i class="fa fa-trash-o" aria-hidden="true" onclick="RemoverFuncionario(${data[index].ID})"></i></td>` +
+                `<th scope="row">${data.records[index].fields.Matrícula}</th>` +
+                `<td>${data.records[index].fields.Nome}</td>` +
+                `<td>${data.records[index].fields.Setor}</td>` +
+                `<td>${data.records[index].fields.Função}</td>` +
+                `<td>${data.records[index].fields.Salário}</td>` +
+                `<td>${data.records[index].fields["Data de Admissão"]}</td>` +
+                // `<td><i class="fa fa-pencil" aria-hidden="true" onclick="EditarFuncionario(${data[index].ID}})"></i></td>` +
+                // `<td><i class="fa fa-trash-o" aria-hidden="true" onclick="RemoverFuncionario(${data[index].ID})"></i></td>` +
                 `</tr>`
         }
 
@@ -37,8 +37,8 @@ $('#funcionarios').click(async function () {
             '<th scope="col">FUNÇÃO</th>' +
             '<th scope="col">SALÁRIO</th>' +
             '<th scope="col">DATA DE ADMISSÃO</th>' +
-            '<th scope="col"></th>' +
-            '<th scope="col"></th>' +
+            // '<th scope="col"></th>' +
+            // '<th scope="col"></th>' +
             '</tr>' +
             '</thead>' +
             '<tbody>' +
@@ -74,18 +74,20 @@ $('#funcionarioSelecionado').change(async function () {
 
 
 async function PreencheFolhaDePonto(funcionario, numMes, descMes) {
-    await $.getJSON('json/folhaDePonto' + funcionario + '.json', async function (data) {
+    await $.getJSON('https://api.airtable.com/v0/appoAW6cx5OpDFgik/FolhadePonto?api_key=keyKYnivsmDdUhpoa', async function (data) {
 
         var html = ""
-        for (let index = 0; index < data.length; index++) {
+        for (let index = 0; index < data.records.length; index++) {
+
+            if(funcionario == data.records[index].fields.Funcionário && data.records[index].fields["Mês referência"])
 
             html += `<tr>` +
-                `<th scope="row">${descMes}</th>` +
-                `<td>${data[index].DIA}/${numMes}/${data[index].ANO}</td>` +
-                `<td>${data[index].HORA_ENTRADA}</td>` +
-                `<td>${data[index].HORA_SAIDA}</td>` +
-                `<td>${data[index].HORAS_TRABALHADAS}</td>` +
-                `<td>${data[index].OBSERVACAO}</td>` +
+                `<th scope="row">${data.records[index].fields["Mês referência"]}</th>` +
+                `<td>${data.records[index].fields.Data}</td>` +
+                `<td>${data.records[index].fields.Entrada}</td>` +
+                `<td>${data.records[index].fields.Saída}</td>` +
+                `<td>${data.records[index].fields["Horas Trabalhadas"]}</td>` +
+                `<td>--</td>` +
                 `</tr>`
         }
 
