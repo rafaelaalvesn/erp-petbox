@@ -19,10 +19,10 @@ $('#pedidos').click(async function () {
 
                 var dataPedido = await FormataData(data[index].DATA_PEDIDO);
                 var entregue = await StatusEntrega(data[index].ID_PEDIDO)
-                
+
                 html += `<tr>` +
                     `<th scope="row">${data[index].ID_PEDIDO}</th>` +
-                    `<td>${assinante[i].NOME}</td>` +
+                    `<td>${assinante[index].NOME}</td>` +
                     `<td>${entregue}</td>` +
                     `<td>${dataPedido}</td>` +
                     `</tr>`
